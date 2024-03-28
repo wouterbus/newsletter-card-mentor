@@ -1,0 +1,54 @@
+* {
+    box-sizing:border-box;
+}
+
+@media (max-width:725px) {
+    .container {
+        flex-direction: column-reverse!important;
+        padding: 0!important;
+        margin: 0!important;
+        border-radius: 0!important;
+    }
+
+    .container img {
+        width: 100%!important;
+    }
+     
+    .mobile-w {
+        width: auto!important;
+    }
+}
+
+::placeholder {
+    color: hsl(231, 7%, 60%);
+    font-family: inherit;
+}
+
+input:focus {
+    outline: 0;
+    border: 1px solid #36384e!important;
+}
+
+/* Input Invalid */
+
+input.invalid {
+    background-color: #ff63471c;
+    border: 1px solid tomato!important;
+    color: tomato!important;
+}
+
+input.valid {
+    background-color: rgba(71, 255, 77, 0.078);
+    border: 1px solid rgb(71, 255, 77)!important;
+    color: rgb(71, 255, 77)!important;
+}
+
+button.disabled {
+    background-color: rgb(208, 208, 208)!important;
+    cursor:not-allowed!important;
+}
+
+button.disabled:hover {
+    background-color: rgb(208, 208, 208)!important;
+}
+
